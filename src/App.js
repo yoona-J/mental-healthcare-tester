@@ -16,16 +16,16 @@ function App() {
     <div className="App">
       <Router basename="/mental-healthcare-tester">
          <Routes>
-            <Route  path="/" element={ <LandingPage />} />
-            <Route  path="/depression" element={ <DepressionTestPage />} />
-            <Route  path="/postpartum" element={ <PostpartumDepressionTestPage />} />
-            <Route  path="/anxiety" element={ <AnxietyTestPage />} />
-            <Route  path="/adhd" element={ <ADHDTestPage />} />
-            <Route  path="/bipolar" element={ <BipolarTestPage />} />
-            <Route  path="/psychosis" element={ <PsychosisSchizophreniaTestPage />} />
-            <Route  path="/ptsd" element={ <PTSDTestPage />} />
-            <Route  path="/eating" element={ <EatingDisorderTestPage />} />
-            <Route  path="/addition" element={ <AddictionTestPage />} />
+            <Route  path="/*" element={ <LandingPage />} />
+            <Route  path="*/depression" element={ <DepressionTestPage />} />
+            <Route  path="*/postpartum" element={ <PostpartumDepressionTestPage />} />
+            <Route  path="*/anxiety" element={ <AnxietyTestPage />} />
+            <Route  path="*/adhd" element={ <ADHDTestPage />} />
+            <Route  path="*/bipolar" element={ <BipolarTestPage />} />
+            <Route  path="*/psychosis" element={ <PsychosisSchizophreniaTestPage />} />
+            <Route  path="*/ptsd" element={ <PTSDTestPage />} />
+            <Route  path="*/eating" element={ <EatingDisorderTestPage />} />
+            <Route  path="*/addition" element={ <AddictionTestPage />} />
          </Routes>
      </Router>
     </div>
