@@ -14,7 +14,7 @@ import AddictionTestPage from "./components/AddictionTestPage";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter basename="/mental-healthcare-tester/">
+      <Router basename="/mental-healthcare-tester">
          <Routes>
             <Route  path="/" element={ <LandingPage />} />
             <Route  path="/depression" element={ <DepressionTestPage />} />
@@ -27,7 +27,7 @@ function App() {
             <Route  path="/eating" element={ <EatingDisorderTestPage />} />
             <Route  path="/addition" element={ <AddictionTestPage />} />
          </Routes>
-     </BrowserRouter>
+     </Router>
     </div>
   );
 }
