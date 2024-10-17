@@ -98,7 +98,7 @@ function EatingDisorderTestPage() {
     return (
         <div>
             <div>
-                <a href='/'>
+                <a href='./'>
                   <p style={{
                           fontSize: '30px',
                           textAlign: 'center'

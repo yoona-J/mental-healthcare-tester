@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.js": "/mental-healthcare-tester/static/js/main.f0e2d295.js",
+    "main.js": "/mental-healthcare-tester/static/js/main.bc046c47.js",
     "static/js/453.b6f6832a.chunk.js": "/mental-healthcare-tester/static/js/453.b6f6832a.chunk.js",
     "index.html": "/mental-healthcare-tester/index.html",
-    "main.f0e2d295.js.map": "/mental-healthcare-tester/static/js/main.f0e2d295.js.map",
+    "main.bc046c47.js.map": "/mental-healthcare-tester/static/js/main.bc046c47.js.map",
     "453.b6f6832a.chunk.js.map": "/mental-healthcare-tester/static/js/453.b6f6832a.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.f0e2d295.js"
+    "static/js/main.bc046c47.js"
   ]
 }
