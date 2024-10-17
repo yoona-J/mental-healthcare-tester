@@ -14,7 +14,7 @@ import AddictionTestPage from "./components/AddictionTestPage";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter basename="/mental-healthcare-tester">
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
          <Routes>
             <Route  path="/" element={ <LandingPage />} />
             <Route  path="/depression" element={ <DepressionTestPage />} />
