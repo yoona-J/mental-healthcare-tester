@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes, BrowserRouter } from "react-router-dom";
+import { HashRouter as Router, Route, Routes, BrowserRouter } from "react-router-dom";
 
 import LandingPage from "./components/LandingPage";
 import DepressionTestPage from "./components/DepressionTestPage";
@@ -14,18 +14,18 @@ import AddictionTestPage from "./components/AddictionTestPage";
 function App() {
   return (
     <div className="App">
-      <Router basename="/mental-healthcare-tester">
+      <Router basename="/mental-healthcare-tester/">
          <Routes>
             <Route  path="/" element={ <LandingPage />} />
-            <Route  path="/mental-healthcare-tester/depression" element={ <DepressionTestPage />} />
-            <Route  path="/mental-healthcare-tester/postpartum" element={ <PostpartumDepressionTestPage />} />
-            <Route  path="/mental-healthcare-tester/anxiety" element={ <AnxietyTestPage />} />
-            <Route  path="/mental-healthcare-tester/adhd" element={ <ADHDTestPage />} />
-            <Route  path="/mental-healthcare-tester/bipolar" element={ <BipolarTestPage />} />
-            <Route  path="/mental-healthcare-tester/psychosis" element={ <PsychosisSchizophreniaTestPage />} />
-            <Route  path="/mental-healthcare-tester/ptsd" element={ <PTSDTestPage />} />
-            <Route  path="/mental-healthcare-tester/eating" element={ <EatingDisorderTestPage />} />
-            <Route  path="/mental-healthcare-tester/addition" element={ <AddictionTestPage />} />
+            <Route  path="/depression" element={ <DepressionTestPage />} />
+            <Route  path="/postpartum" element={ <PostpartumDepressionTestPage />} />
+            <Route  path="/anxiety" element={ <AnxietyTestPage />} />
+            <Route  path="/adhd" element={ <ADHDTestPage />} />
+            <Route  path="/bipolar" element={ <BipolarTestPage />} />
+            <Route  path="/psychosis" element={ <PsychosisSchizophreniaTestPage />} />
+            <Route  path="/ptsd" element={ <PTSDTestPage />} />
+            <Route  path="/eating" element={ <EatingDisorderTestPage />} />
+            <Route  path="/addition" element={ <AddictionTestPage />} />
          </Routes>
      </Router>
     </div>
