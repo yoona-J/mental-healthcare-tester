@@ -1,4 +1,4 @@
-import { HashRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, BrowserRouter } from "react-router-dom";
 
 import LandingPage from "./components/LandingPage";
 import DepressionTestPage from "./components/DepressionTestPage";
@@ -17,7 +17,7 @@ import AnotherTestPage from "./components/AddictiontestPage/AnotherTestPage";
 function App() {
   return (
     <div className="App">
-      <Router>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
          <Routes>
             <Route  path="/" element={ <LandingPage />} />
             <Route  path="/depression" element={ <DepressionTestPage />} />
@@ -33,7 +33,7 @@ function App() {
             <Route  path="/addition/drug" element={ <DrugTestPage />} />
             <Route  path="/addition/another" element={ <AnotherTestPage />} />
          </Routes>
-     </Router>
+     </BrowserRouter>
     </div>
   );
 }
