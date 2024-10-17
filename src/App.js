@@ -20,18 +20,18 @@ function App() {
       <BrowserRouter basename={process.env.PUBLIC_URL}>
          <Routes>
             <Route exact path="/" element={ <LandingPage />} />
-            <Route exact path="./depression" element={ <DepressionTestPage />} />
-            <Route exact path="./postpartum" element={ <PostpartumDepressionTestPage />} />
-            <Route exact path="./anxiety" element={ <AnxietyTestPage />} />
-            <Route exact path="./adhd" element={ <ADHDTestPage />} />
-            <Route exact path="./bipolar" element={ <BipolarTestPage />} />
-            <Route exact path="./psychosis" element={ <PsychosisSchizophreniaTestPage />} />
-            <Route exact path="./ptsd" element={ <PTSDTestPage />} />
-            <Route exact path="./eating" element={ <EatingDisorderTestPage />} />
-            <Route exact path="./addition" element={ <AddictionTestPage />} />
-            <Route exact path="./addition/alcohol" element={ <AlcoholTestPage />} />
-            <Route exact path="./addition/drug" element={ <DrugTestPage />} />
-            <Route exact path="./addition/another" element={ <AnotherTestPage />} />
+            <Route exact path="/depression" element={ <DepressionTestPage />} />
+            <Route exact path="/postpartum" element={ <PostpartumDepressionTestPage />} />
+            <Route exact path="/anxiety" element={ <AnxietyTestPage />} />
+            <Route exact path="/adhd" element={ <ADHDTestPage />} />
+            <Route exact path="/bipolar" element={ <BipolarTestPage />} />
+            <Route exact path="/psychosis" element={ <PsychosisSchizophreniaTestPage />} />
+            <Route exact path="/ptsd" element={ <PTSDTestPage />} />
+            <Route exact path="/eating" element={ <EatingDisorderTestPage />} />
+            <Route exact path="/addition" element={ <AddictionTestPage />} />
+            <Route exact path="/addition/alcohol" element={ <AlcoholTestPage />} />
+            <Route exact path="/addition/drug" element={ <DrugTestPage />} />
+            <Route exact path="/addition/another" element={ <AnotherTestPage />} />
          </Routes>
      </BrowserRouter>
     </div>

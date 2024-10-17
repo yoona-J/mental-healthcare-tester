@@ -18,19 +18,19 @@ function AddictionTestPage() {
     const NextButton = () => {
       if (No1 == 'alcohol') {
         return <div>
-          <a href='/addition/alcohol'>
+          <a href='./addition/alcohol'>
             <button>Next</button>
           </a>
         </div>
       } else if (No1 == 'drug') {
         return <div>
-          <a href='/addition/drug'>
+          <a href='./addition/drug'>
             <button>Next</button>
           </a>
         </div>
       } else if (No1 == 'another') {
         return <div>
-          <a href='/addition/another'>
+          <a href='./addition/another'>
             <button>Next</button>
           </a>
         </div>
