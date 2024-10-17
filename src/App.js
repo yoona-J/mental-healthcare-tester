@@ -17,7 +17,7 @@ import AnotherTestPage from "./components/AddictiontestPage/AnotherTestPage";
 function App() {
   return (
     <div className="App">
-      <Router basename='/'>
+      <Router>
          <Routes>
             <Route  path="/" element={ <LandingPage />} />
             <Route  path="/depression" element={ <DepressionTestPage />} />
