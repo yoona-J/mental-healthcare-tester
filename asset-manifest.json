@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/mental-healthcare-tester/static/css/main.f52b0e2d.css",
-    "main.js": "/mental-healthcare-tester/static/js/main.6b618e14.js",
-    "static/js/453.b6f6832a.chunk.js": "/mental-healthcare-tester/static/js/453.b6f6832a.chunk.js",
-    "index.html": "/mental-healthcare-tester/index.html",
-    "main.f52b0e2d.css.map": "/mental-healthcare-tester/static/css/main.f52b0e2d.css.map",
-    "main.6b618e14.js.map": "/mental-healthcare-tester/static/js/main.6b618e14.js.map",
-    "453.b6f6832a.chunk.js.map": "/mental-healthcare-tester/static/js/453.b6f6832a.chunk.js.map"
+    "main.css": "/static/css/main.f52b0e2d.css",
+    "main.js": "/static/js/main.e8fa5a9d.js",
+    "static/js/453.b6f6832a.chunk.js": "/static/js/453.b6f6832a.chunk.js",
+    "index.html": "/index.html",
+    "main.f52b0e2d.css.map": "/static/css/main.f52b0e2d.css.map",
+    "main.e8fa5a9d.js.map": "/static/js/main.e8fa5a9d.js.map",
+    "453.b6f6832a.chunk.js.map": "/static/js/453.b6f6832a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f52b0e2d.css",
-    "static/js/main.6b618e14.js"
+    "static/js/main.e8fa5a9d.js"
   ]
 }
