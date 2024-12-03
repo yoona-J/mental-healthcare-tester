@@ -45,7 +45,7 @@ function AddictionTestPage() {
     return (
         <div>
             <div>
-                <a href='/' style={{ textDecoration: 'none', color: '#0E4A84' }}>
+                <a href='./' style={{ textDecoration: 'none', color: '#0E4A84' }}>
                   <p style={{
                           fontSize: '30px',
                           textAlign: 'center'
