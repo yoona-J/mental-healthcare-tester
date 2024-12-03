@@ -248,7 +248,7 @@ function PsychosisSchizophreniaTestPage() {
     return (
         <div>
             <div>
-                <a href='./'>
+                <a href='./' style={{ textDecoration: 'none', color: '#0E4A84' }}>
                   <p style={{
                           fontSize: '30px',
                           textAlign: 'center'
@@ -266,14 +266,14 @@ function PsychosisSchizophreniaTestPage() {
                 <br />
                 <div>
                     <p>1. Do familiar surroundings sometimes seem strange, confusing, threatening or unreal to you?</p>
-                    <Radio.Group onChange={no1}>
+                    <Radio.Group onChange={no1} buttonStyle="solid">
                         <Radio.Button value="0">Yes</Radio.Button>
                         <Radio.Button value="1">No</Radio.Button>
                     </Radio.Group>
                 </div>
                 {isYesSelected1 && ( <div>
                   <p>If YES: When this happens, I feel frightened, concerned, or it causes problems for me :</p>
-                      <Radio.Group onChange={no1}>
+                      <Radio.Group onChange={no1} buttonStyle="solid">
                           <Radio.Button value="1">Strongly disagree</Radio.Button>
                           <Radio.Button value="2">disagree</Radio.Button>
                           <Radio.Button value="3">neutral</Radio.Button>
@@ -283,14 +283,14 @@ function PsychosisSchizophreniaTestPage() {
                   </div>)}
                 <div>
                     <p>2. Have you heard unusual sounds like banging, clicking, hissing, clapping or ringing in your ears?</p>
-                    <Radio.Group onChange={no2}>
+                    <Radio.Group onChange={no2} buttonStyle="solid">
                         <Radio.Button value="0">Yes</Radio.Button>
                         <Radio.Button value="1">No</Radio.Button>
                     </Radio.Group>
                 </div>
                 {isYesSelected2 && ( <div>
                   <p>If YES: When this happens, I feel frightened, concerned, or it causes problems for me :</p>
-                      <Radio.Group onChange={no2}>
+                      <Radio.Group onChange={no2} buttonStyle="solid">
                           <Radio.Button value="1">Strongly disagree</Radio.Button>
                           <Radio.Button value="2">disagree</Radio.Button>
                           <Radio.Button value="3">neutral</Radio.Button>
@@ -300,14 +300,14 @@ function PsychosisSchizophreniaTestPage() {
                   </div>)}
                 <div>
                     <p>3. Do things that you see appear different from the way they usually do?</p>
-                    <Radio.Group onChange={no3}>
+                    <Radio.Group onChange={no3} buttonStyle="solid">
                         <Radio.Button value="0">Yes</Radio.Button>
                         <Radio.Button value="1">No</Radio.Button>
                     </Radio.Group>
                 </div>
                 {isYesSelected3 && ( <div>
                   <p>If YES: When this happens, I feel frightened, concerned, or it causes problems for me :</p>
-                      <Radio.Group onChange={no3}>
+                      <Radio.Group onChange={no3} buttonStyle="solid">
                           <Radio.Button value="1">Strongly disagree</Radio.Button>
                           <Radio.Button value="2">disagree</Radio.Button>
                           <Radio.Button value="3">neutral</Radio.Button>
@@ -317,14 +317,14 @@ function PsychosisSchizophreniaTestPage() {
                   </div>)}
                 <div>
                     <p>4. Have you had experiences with telepathy, psychic forces, or fortune telling?</p>
-                    <Radio.Group onChange={no4}>
+                    <Radio.Group onChange={no4} buttonStyle="solid">
                         <Radio.Button value="0">Yes</Radio.Button>
                         <Radio.Button value="1">No</Radio.Button>
                     </Radio.Group>
                 </div>
                 {isYesSelected4 && ( <div>
                   <p>If YES: When this happens, I feel frightened, concerned, or it causes problems for me :</p>
-                      <Radio.Group onChange={no4}>
+                      <Radio.Group onChange={no4} buttonStyle="solid">
                           <Radio.Button value="1">Strongly disagree</Radio.Button>
                           <Radio.Button value="2">disagree</Radio.Button>
                           <Radio.Button value="3">neutral</Radio.Button>
@@ -334,14 +334,14 @@ function PsychosisSchizophreniaTestPage() {
                   </div>)}
                 <div>
                     <p>5. Have you felt that you are not in control of your own ideas or thoughts?</p>
-                    <Radio.Group onChange={no5}>
+                    <Radio.Group onChange={no5} buttonStyle="solid">
                         <Radio.Button value="0">Yes</Radio.Button>
                         <Radio.Button value="1">No</Radio.Button>
                     </Radio.Group>
                 </div>
                 {isYesSelected5 && ( <div>
                   <p>If YES: When this happens, I feel frightened, concerned, or it causes problems for me :</p>
-                      <Radio.Group onChange={no5}>
+                      <Radio.Group onChange={no5} buttonStyle="solid">
                           <Radio.Button value="1">Strongly disagree</Radio.Button>
                           <Radio.Button value="2">disagree</Radio.Button>
                           <Radio.Button value="3">neutral</Radio.Button>
@@ -351,14 +351,14 @@ function PsychosisSchizophreniaTestPage() {
                   </div>)}
                 <div>
                     <p>6. Do you have difficulty getting your point across, because you ramble or go off the track a lot when you talk?</p>
-                    <Radio.Group onChange={no6}>
+                    <Radio.Group onChange={no6} buttonStyle="solid">
                         <Radio.Button value="0">Yes</Radio.Button>
                         <Radio.Button value="1">No</Radio.Button>
                     </Radio.Group>
                 </div>
                 {isYesSelected6 && ( <div>
                   <p>If YES: When this happens, I feel frightened, concerned, or it causes problems for me :</p>
-                      <Radio.Group onChange={no6}>
+                      <Radio.Group onChange={no6} buttonStyle="solid">
                           <Radio.Button value="1">Strongly disagree</Radio.Button>
                           <Radio.Button value="2">disagree</Radio.Button>
                           <Radio.Button value="3">neutral</Radio.Button>
@@ -368,14 +368,14 @@ function PsychosisSchizophreniaTestPage() {
                   </div>)}
                 <div>
                     <p>7. Do you have strong feelings or beliefs about being unusually gifted or talented in some way?</p>
-                    <Radio.Group onChange={no7}>
+                    <Radio.Group onChange={no7} buttonStyle="solid">
                         <Radio.Button value="0">Yes</Radio.Button>
                         <Radio.Button value="1">No</Radio.Button>
                     </Radio.Group>
                 </div>
                 {isYesSelected7 && ( <div>
                   <p>If YES: When this happens, I feel frightened, concerned, or it causes problems for me :</p>
-                      <Radio.Group onChange={no7}>
+                      <Radio.Group onChange={no7} buttonStyle="solid">
                           <Radio.Button value="1">Strongly disagree</Radio.Button>
                           <Radio.Button value="2">disagree</Radio.Button>
                           <Radio.Button value="3">neutral</Radio.Button>
@@ -385,14 +385,14 @@ function PsychosisSchizophreniaTestPage() {
                   </div>)}
                 <div>
                     <p>8. Do you feel that other people are watching you or talking about you?</p>
-                    <Radio.Group onChange={no8}>
+                    <Radio.Group onChange={no8} buttonStyle="solid">
                         <Radio.Button value="0">Yes</Radio.Button>
                         <Radio.Button value="1">No</Radio.Button>
                     </Radio.Group>
                 </div>
                 {isYesSelected8 && ( <div>
                   <p>If YES: When this happens, I feel frightened, concerned, or it causes problems for me :</p>
-                      <Radio.Group onChange={no8}>
+                      <Radio.Group onChange={no8} buttonStyle="solid">
                           <Radio.Button value="1">Strongly disagree</Radio.Button>
                           <Radio.Button value="2">disagree</Radio.Button>
                           <Radio.Button value="3">neutral</Radio.Button>
@@ -402,14 +402,14 @@ function PsychosisSchizophreniaTestPage() {
                   </div>)}
                 <div>
                     <p>9. Do you sometimes get strange feelings on or just beneath your skin, like bugs crawling?</p>
-                    <Radio.Group onChange={no9}>
+                    <Radio.Group onChange={no9} buttonStyle="solid">
                         <Radio.Button value="0">Yes</Radio.Button>
                         <Radio.Button value="1">No</Radio.Button>
                     </Radio.Group>
                 </div>
                 {isYesSelected9 && ( <div>
                   <p>If YES: When this happens, I feel frightened, concerned, or it causes problems for me :</p>
-                      <Radio.Group onChange={no9}>
+                      <Radio.Group onChange={no9} buttonStyle="solid">
                           <Radio.Button value="1">Strongly disagree</Radio.Button>
                           <Radio.Button value="2">disagree</Radio.Button>
                           <Radio.Button value="3">neutral</Radio.Button>
@@ -419,14 +419,14 @@ function PsychosisSchizophreniaTestPage() {
                   </div>)}
                 <div>
                     <p>10. Do you sometimes feel suddenly distracted by distant sounds that you are not normally aware of?</p>
-                    <Radio.Group onChange={no10}>
+                    <Radio.Group onChange={no10} buttonStyle="solid">
                         <Radio.Button value="0">Yes</Radio.Button>
                         <Radio.Button value="1">No</Radio.Button>
                     </Radio.Group>
                 </div>
                 {isYesSelected10 && ( <div>
                   <p>If YES: When this happens, I feel frightened, concerned, or it causes problems for me :</p>
-                      <Radio.Group onChange={no10}>
+                    <Radio.Group onChange={no10} buttonStyle="solid">
                           <Radio.Button value="1">Strongly disagree</Radio.Button>
                           <Radio.Button value="2">disagree</Radio.Button>
                           <Radio.Button value="3">neutral</Radio.Button>
@@ -436,14 +436,14 @@ function PsychosisSchizophreniaTestPage() {
                   </div>)}
                 <div>
                     <p>11. Have you had the sense that some person or force is around you, although you couldn’t see anyone?</p>
-                    <Radio.Group onChange={no11}>
+                    <Radio.Group onChange={no11} buttonStyle="solid">
                         <Radio.Button value="0">Yes</Radio.Button>
                         <Radio.Button value="1">No</Radio.Button>
                     </Radio.Group>
                 </div>
                 {isYesSelected11 && ( <div>
                   <p>If YES: When this happens, I feel frightened, concerned, or it causes problems for me :</p>
-                      <Radio.Group onChange={no11}>
+                    <Radio.Group onChange={no11} buttonStyle="solid">
                           <Radio.Button value="1">Strongly disagree</Radio.Button>
                           <Radio.Button value="2">disagree</Radio.Button>
                           <Radio.Button value="3">neutral</Radio.Button>
@@ -453,14 +453,14 @@ function PsychosisSchizophreniaTestPage() {
                   </div>)}
                 <div>
                     <p>12. Do you worry at times that something may be wrong with your mind?</p>
-                    <Radio.Group onChange={no12}>
+                    <Radio.Group onChange={no12} buttonStyle="solid">
                         <Radio.Button value="0">Yes</Radio.Button>
                         <Radio.Button value="1">No</Radio.Button>
                     </Radio.Group>
                 </div>
                 {isYesSelected12 && ( <div>
                   <p>If YES: When this happens, I feel frightened, concerned, or it causes problems for me :</p>
-                      <Radio.Group onChange={no12}>
+                        <Radio.Group onChange={no12} buttonStyle="solid">
                           <Radio.Button value="1">Strongly disagree</Radio.Button>
                           <Radio.Button value="2">disagree</Radio.Button>
                           <Radio.Button value="3">neutral</Radio.Button>
@@ -470,14 +470,14 @@ function PsychosisSchizophreniaTestPage() {
                   </div>)}
                 <div>
                     <p>13. Have you ever felt that you don't exist, the world does not exist, or that you are dead?</p>
-                    <Radio.Group onChange={no13}>
+                    <Radio.Group onChange={no13} buttonStyle="solid">
                         <Radio.Button value="0">Yes</Radio.Button>
                         <Radio.Button value="1">No</Radio.Button>
                     </Radio.Group>
                 </div>
                 {isYesSelected13 && ( <div>
                   <p>If YES: When this happens, I feel frightened, concerned, or it causes problems for me :</p>
-                      <Radio.Group onChange={no13}>
+                        <Radio.Group onChange={no13} buttonStyle="solid">
                           <Radio.Button value="1">Strongly disagree</Radio.Button>
                           <Radio.Button value="2">disagree</Radio.Button>
                           <Radio.Button value="3">neutral</Radio.Button>
@@ -487,14 +487,14 @@ function PsychosisSchizophreniaTestPage() {
                   </div>)}
                 <div>
                     <p>14. Have you been confused at times whether something you experienced was real or imaginary?</p>
-                    <Radio.Group onChange={no14}>
+                    <Radio.Group onChange={no14} buttonStyle="solid">
                         <Radio.Button value="0">Yes</Radio.Button>
                         <Radio.Button value="1">No</Radio.Button>
                     </Radio.Group>
                 </div>
                 {isYesSelected14 && ( <div>
                   <p>If YES: When this happens, I feel frightened, concerned, or it causes problems for me :</p>
-                      <Radio.Group onChange={no14}>
+                        <Radio.Group onChange={no14} buttonStyle="solid">
                           <Radio.Button value="1">Strongly disagree</Radio.Button>
                           <Radio.Button value="2">disagree</Radio.Button>
                           <Radio.Button value="3">neutral</Radio.Button>
@@ -504,14 +504,14 @@ function PsychosisSchizophreniaTestPage() {
                   </div>)}
                 <div>
                     <p>15. Do you hold beliefs that other people would find unusual or bizarre?</p>
-                    <Radio.Group onChange={no15}>
+                    <Radio.Group onChange={no15} buttonStyle="solid">
                         <Radio.Button value="0">Yes</Radio.Button>
                         <Radio.Button value="1">No</Radio.Button>
                     </Radio.Group>
                 </div>
                 {isYesSelected15 && ( <div>
                   <p>If YES: When this happens, I feel frightened, concerned, or it causes problems for me :</p>
-                      <Radio.Group onChange={no15}>
+                    <Radio.Group onChange={no15} buttonStyle="solid">
                           <Radio.Button value="1">Strongly disagree</Radio.Button>
                           <Radio.Button value="2">disagree</Radio.Button>
                           <Radio.Button value="3">neutral</Radio.Button>
@@ -521,14 +521,14 @@ function PsychosisSchizophreniaTestPage() {
                   </div>)}
                 <div>
                     <p>16. Do you feel that parts of your body have changed in some way, or that parts of your body are working differently?</p>
-                    <Radio.Group onChange={no16}>
+                    <Radio.Group onChange={no16} buttonStyle="solid">
                         <Radio.Button value="0">Yes</Radio.Button>
                         <Radio.Button value="1">No</Radio.Button>
                     </Radio.Group>
                 </div>
                 {isYesSelected16 && ( <div>
                   <p>If YES: When this happens, I feel frightened, concerned, or it causes problems for me :</p>
-                      <Radio.Group onChange={no16}>
+                    <Radio.Group onChange={no16} buttonStyle="solid">
                           <Radio.Button value="1">Strongly disagree</Radio.Button>
                           <Radio.Button value="2">disagree</Radio.Button>
                           <Radio.Button value="3">neutral</Radio.Button>
@@ -538,14 +538,14 @@ function PsychosisSchizophreniaTestPage() {
                   </div>)}
                 <div>
                     <p>17. Are your thoughts sometimes so strong that you can almost hear them?</p>
-                    <Radio.Group onChange={no17}>
+                    <Radio.Group onChange={no17} buttonStyle="solid">
                         <Radio.Button value="0">Yes</Radio.Button>
                         <Radio.Button value="1">No</Radio.Button>
                     </Radio.Group>
                 </div>
                 {isYesSelected17 && ( <div>
                   <p>If YES: When this happens, I feel frightened, concerned, or it causes problems for me :</p>
-                      <Radio.Group onChange={no17}>
+                    <Radio.Group onChange={no17} buttonStyle="solid">
                           <Radio.Button value="1">Strongly disagree</Radio.Button>
                           <Radio.Button value="2">disagree</Radio.Button>
                           <Radio.Button value="3">neutral</Radio.Button>
@@ -555,14 +555,14 @@ function PsychosisSchizophreniaTestPage() {
                   </div>)}
                 <div>
                     <p>18. Do you find yourself feeling mistrustful or suspicious of other people?</p>
-                    <Radio.Group onChange={no18}>
+                    <Radio.Group onChange={no18} buttonStyle="solid">
                         <Radio.Button value="0">Yes</Radio.Button>
                         <Radio.Button value="1">No</Radio.Button>
                     </Radio.Group>
                 </div>
                 {isYesSelected18 && ( <div>
                   <p>If YES: When this happens, I feel frightened, concerned, or it causes problems for me :</p>
-                      <Radio.Group onChange={no18}>
+                    <Radio.Group onChange={no18} buttonStyle="solid">
                           <Radio.Button value="1">Strongly disagree</Radio.Button>
                           <Radio.Button value="2">disagree</Radio.Button>
                           <Radio.Button value="3">neutral</Radio.Button>
@@ -572,14 +572,14 @@ function PsychosisSchizophreniaTestPage() {
                   </div>)}
                 <div>
                     <p>19. Have you seen unusual things like flashes, flames, blinding light, or geometric figures?</p>
-                    <Radio.Group onChange={no19}>
+                    <Radio.Group onChange={no19} buttonStyle="solid">
                         <Radio.Button value="0">Yes</Radio.Button>
                         <Radio.Button value="1">No</Radio.Button>
                     </Radio.Group>
                 </div>
                 {isYesSelected19 && ( <div>
                   <p>If YES: When this happens, I feel frightened, concerned, or it causes problems for me :</p>
-                      <Radio.Group onChange={no19}>
+                    <Radio.Group onChange={no19} buttonStyle="solid">
                           <Radio.Button value="1">Strongly disagree</Radio.Button>
                           <Radio.Button value="2">disagree</Radio.Button>
                           <Radio.Button value="3">neutral</Radio.Button>
@@ -589,14 +589,14 @@ function PsychosisSchizophreniaTestPage() {
                   </div>)}
                 <div>
                     <p>20. Have you seen things that other people can't see or don't seem to see?</p>
-                    <Radio.Group onChange={no20}>
+                    <Radio.Group onChange={no20} buttonStyle="solid">
                         <Radio.Button value="0">Yes</Radio.Button>
                         <Radio.Button value="1">No</Radio.Button>
                     </Radio.Group>
                 </div>
                 {isYesSelected20 && ( <div>
                   <p>If YES: When this happens, I feel frightened, concerned, or it causes problems for me :</p>
-                      <Radio.Group onChange={no20}>
+                    <Radio.Group onChange={no20} buttonStyle="solid">
                           <Radio.Button value="1">Strongly disagree</Radio.Button>
                           <Radio.Button value="2">disagree</Radio.Button>
                           <Radio.Button value="3">neutral</Radio.Button>
@@ -606,14 +606,14 @@ function PsychosisSchizophreniaTestPage() {
                   </div>)}
                 <div>
                     <p>21. Do people sometimes find it hard to understand what you are saying?</p>
-                    <Radio.Group onChange={no21}>
+                    <Radio.Group onChange={no21} buttonStyle="solid">
                         <Radio.Button value="0">Yes</Radio.Button>
                         <Radio.Button value="1">No</Radio.Button>
                     </Radio.Group>
                 </div>
                 {isYesSelected21 && ( <div>
                   <p>If YES: When this happens, I feel frightened, concerned, or it causes problems for me :</p>
-                      <Radio.Group onChange={no21}>
+                    <Radio.Group onChange={no21} buttonStyle="solid">
                           <Radio.Button value="1">Strongly disagree</Radio.Button>
                           <Radio.Button value="2">disagree</Radio.Button>
                           <Radio.Button value="3">neutral</Radio.Button>
@@ -623,11 +623,12 @@ function PsychosisSchizophreniaTestPage() {
                   </div>)}
                 
                 <div style={{ marginTop: '30px' }}>
-                    <button onClick={handleSubmit}>Submit</button>
+                    <button onClick={handleSubmit} style={{ width: '100px', height: '30px', border: 'none', backgroundColor: '#0E4A84', borderRadius: '20px', color: '#FFF'}}>Submit</button>
                 </div>
                 <div style={{ marginTop: '30px' }}>
                     {isCollapsed && (
                         <Collapse
+                            style={{ marginBottom: '100px'}}
                             items={[
                                 {
                                     label: 'Result',

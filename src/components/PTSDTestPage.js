@@ -40,7 +40,7 @@ function PTSDTestPage() {
     return (
         <div>
             <div>
-                <a href='./'>
+                <a href='./' style={{ textDecoration: 'none', color: '#0E4A84' }}>
                   <p style={{
                           fontSize: '30px',
                           textAlign: 'center'
@@ -64,45 +64,46 @@ function PTSDTestPage() {
                 <p>In the past month, have you....</p>
                 <div>
                     <p>1. had nightmares about the event(s) or thought about the event(s) when you did not want to?</p>
-                    <Radio.Group onChange={no1}>
+                    <Radio.Group onChange={no1} buttonStyle="solid">
                         <Radio.Button value="0">No</Radio.Button>
                         <Radio.Button value="1">Yes</Radio.Button>
                     </Radio.Group>
                 </div>
                 <div>
                     <p>2. tried hard not to think about the event(s) or went out of your way to avoid situations that reminded you of the event(s)?</p>
-                    <Radio.Group onChange={no2}>
+                    <Radio.Group onChange={no2} buttonStyle="solid">
                         <Radio.Button value="0">No</Radio.Button>
                         <Radio.Button value="1">Yes</Radio.Button>
                     </Radio.Group>
                 </div>
                 <div>
                     <p>3. been constantly on guard, watchful, or easily startled?</p>
-                    <Radio.Group onChange={no3}>
+                    <Radio.Group onChange={no3} buttonStyle="solid">
                         <Radio.Button value="0">No</Radio.Button>
                         <Radio.Button value="1">Yes</Radio.Button>
                     </Radio.Group>
                 </div>
                 <div>
                     <p>4. felt numb or detached from people, activities, or your surroundings?</p>
-                    <Radio.Group onChange={no4}>
+                    <Radio.Group onChange={no4} buttonStyle="solid">
                         <Radio.Button value="0">No</Radio.Button>
                         <Radio.Button value="1">Yes</Radio.Button>
                     </Radio.Group>
                 </div>
                 <div>
                     <p>5. felt guilty or unable to stop blaming yourself or others for the event(s) or any problems the event(s) may have caused?</p>
-                    <Radio.Group onChange={no5}>
+                    <Radio.Group onChange={no5} buttonStyle="solid">
                         <Radio.Button value="0">No</Radio.Button>
                         <Radio.Button value="1">Yes</Radio.Button>
                     </Radio.Group>
                 </div>
                 <div style={{ marginTop: '30px' }}>
-                    <button onClick={handleSubmit}>Submit</button>
+                    <button onClick={handleSubmit} style={{ width: '100px', height: '30px', border: 'none', backgroundColor: '#0E4A84', borderRadius: '20px', color: '#FFF'}}>Submit</button>
                 </div>
                 <div style={{ marginTop: '30px' }}>
                     {isCollapsed && (
                         <Collapse
+                            style={{ marginBottom: '100px'}}
                             items={[
                                 {
                                     label: 'Result',

@@ -90,7 +90,7 @@ function DrugTestPage() {
     return (
         <div>
             <div>
-                <a href='./'>
+                <a href='./' style={{ textDecoration: 'none', color: '#0E4A84' }}>
                   <p style={{
                           fontSize: '30px',
                           textAlign: 'center'
@@ -107,28 +107,28 @@ function DrugTestPage() {
                 <p>In the last 12 months...</p>
                 <div>
                     <p>Did you have strong desires or cravings for the drug?</p>
-                    <Radio.Group onChange={no1}>
+                    <Radio.Group onChange={no1} buttonStyle="solid">
                         <Radio.Button value="0">No</Radio.Button>
                         <Radio.Button value="1">Yes</Radio.Button>
                     </Radio.Group>
                 </div>
                 <div>
                     <p>Did you want to cut back or stop using the drug, but couldn't?</p>
-                    <Radio.Group onChange={no2}>
+                    <Radio.Group onChange={no2} buttonStyle="solid">
                         <Radio.Button value="0">No</Radio.Button>
                         <Radio.Button value="1">Yes</Radio.Button>
                     </Radio.Group>
                 </div>
                 <div>
                     <p>Did you spend a lot of time trying to get the drug, using the drug, or recovering from using it?</p>
-                    <Radio.Group onChange={no3}>
+                    <Radio.Group onChange={no3} buttonStyle="solid">
                         <Radio.Button value="0">No</Radio.Button>
                         <Radio.Button value="1">Yes</Radio.Button>
                     </Radio.Group>
                 </div>
                 <div>
                     <p>Did you have times when you used the drug more or for longer than you wanted to?</p>
-                    <Radio.Group onChange={no4}>
+                    <Radio.Group onChange={no4} buttonStyle="solid">
                         <Radio.Button value="0">No</Radio.Button>
                         <Radio.Button value="1">Yes</Radio.Button>
                     </Radio.Group>
@@ -136,7 +136,7 @@ function DrugTestPage() {
                 <div>
                     <p>Did using the same amount of the drug have less effect than it used to? Or did you have to use more to feel the effect you wanted?</p>
                     <p>Please answer “yes” if either question is true for you.</p>
-                    <Radio.Group onChange={no5}>
+                    <Radio.Group onChange={no5} buttonStyle="solid">
                         <Radio.Button value="0">No</Radio.Button>
                         <Radio.Button value="1">Yes</Radio.Button>
                     </Radio.Group>
@@ -144,52 +144,53 @@ function DrugTestPage() {
                 <div>
                     <p>Did you have withdrawal symptoms when you weren't using the drug? Or did you use the drug to avoid having these symptoms?</p>
                     <p>Please answer “yes” if either question is true for you.</p>
-                    <Radio.Group onChange={no6}>
+                    <Radio.Group onChange={no6} buttonStyle="solid">
                         <Radio.Button value="0">No</Radio.Button>
                         <Radio.Button value="1">Yes</Radio.Button>
                     </Radio.Group>
                 </div>
                 <div>
                     <p>Did you continue to use the drug even though you thought it might be causing mental or physical problems — or making them worse?</p>
-                    <Radio.Group onChange={no7}>
+                    <Radio.Group onChange={no7} buttonStyle="solid">
                         <Radio.Button value="0">No</Radio.Button>
                         <Radio.Button value="1">Yes</Radio.Button>
                     </Radio.Group>
                 </div>
                 <div>
                     <p>Did you use the drug even though you thought it might be causing problems with your family or other people?</p>
-                    <Radio.Group onChange={no8}>
+                    <Radio.Group onChange={no8} buttonStyle="solid">
                         <Radio.Button value="0">No</Radio.Button>
                         <Radio.Button value="1">Yes</Radio.Button>
                     </Radio.Group>
                 </div>
                 <div>
                     <p>Did using the drug make it harder for you to keep up with your responsibilities at work, school, or home?</p>
-                    <Radio.Group onChange={no9}>
+                    <Radio.Group onChange={no9} buttonStyle="solid">
                         <Radio.Button value="0">No</Radio.Button>
                         <Radio.Button value="1">Yes</Radio.Button>
                     </Radio.Group>
                 </div>
                 <div>
                     <p>Did you spend less time working, enjoying hobbies, or being with others because of your use of the drug?</p>
-                    <Radio.Group onChange={no10}>
+                    <Radio.Group onChange={no10} buttonStyle="solid">
                         <Radio.Button value="0">No</Radio.Button>
                         <Radio.Button value="1">Yes</Radio.Button>
                     </Radio.Group>
                 </div>
                 <div>
                     <p>Did you do something dangerous more than once after using the drug — like drive a car or operate machinery?</p>
-                    <Radio.Group onChange={no11}>
+                    <Radio.Group onChange={no11} buttonStyle="solid">
                         <Radio.Button value="0">No</Radio.Button>
                         <Radio.Button value="1">Yes</Radio.Button>
                     </Radio.Group>
                 </div>
                 <div style={{ marginTop: '30px' }}>
-                    <button onClick={handleSubmit}>Submit</button>
+                    <button onClick={handleSubmit} style={{ width: '100px', height: '30px', border: 'none', backgroundColor: '#0E4A84', borderRadius: '20px', color: '#FFF'}}>Submit</button>
                 </div>
                 <div style={{ marginTop: '30px' }}>
                     {isCollapsed && (
                         <Collapse
+                            style={{ marginBottom: '100px'}}
                             items={[
                                 {
                                     label: 'Result',

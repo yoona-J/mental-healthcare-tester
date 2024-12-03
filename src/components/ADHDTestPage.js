@@ -181,7 +181,7 @@ function ADHDTestPage() {
     return (
         <div>
             <div>
-                <a href='./'>
+                <a href='./' style={{ textDecoration: 'none', color: '#0E4A84' }}>
                   <p style={{
                           fontSize: '30px',
                           textAlign: 'center'
@@ -197,7 +197,7 @@ function ADHDTestPage() {
                 <br />
                 <div>
                     <p>1. How often do you have trouble wrapping up the final details of a project, once the challenging parts have been done?</p>
-                    <Radio.Group onChange={no1}>
+                    <Radio.Group onChange={no1} buttonStyle="solid">
                         <Radio.Button value="0">never</Radio.Button>
                         <Radio.Button value="1">rarely</Radio.Button>
                         <Radio.Button value="2">sometimes</Radio.Button>
@@ -207,7 +207,7 @@ function ADHDTestPage() {
                 </div>
                 <div>
                     <p>2. How often do you have difficulty getting things in order when you have to do a task that requires organization?</p>
-                    <Radio.Group onChange={no2}>
+                    <Radio.Group onChange={no2} buttonStyle="solid">
                         <Radio.Button value="0">never</Radio.Button>
                         <Radio.Button value="1">rarely</Radio.Button>
                         <Radio.Button value="2">sometimes</Radio.Button>
@@ -217,7 +217,7 @@ function ADHDTestPage() {
                 </div>
                 <div>
                     <p>3. How often do you have problems remembering appointments or obligations?</p>
-                    <Radio.Group onChange={no3}>
+                    <Radio.Group onChange={no3} buttonStyle="solid">
                         <Radio.Button value="0">never</Radio.Button>
                         <Radio.Button value="1">rarely</Radio.Button>
                         <Radio.Button value="2">sometimes</Radio.Button>
@@ -227,7 +227,7 @@ function ADHDTestPage() {
                 </div>
                 <div>
                     <p>4. When you have a task that requires a lot of thought, how often do you avoid or delay getting started?</p>
-                    <Radio.Group onChange={no4}>
+                    <Radio.Group onChange={no4} buttonStyle="solid">
                         <Radio.Button value="0">never</Radio.Button>
                         <Radio.Button value="1">rarely</Radio.Button>
                         <Radio.Button value="2">sometimes</Radio.Button>
@@ -237,7 +237,7 @@ function ADHDTestPage() {
                 </div>
                 <div>
                     <p>5. How often do you fidget or squirm with your hands or feet when you have to sit down for a long time?</p>
-                    <Radio.Group onChange={no5}>
+                    <Radio.Group onChange={no5} buttonStyle="solid">
                         <Radio.Button value="0">never</Radio.Button>
                         <Radio.Button value="1">rarely</Radio.Button>
                         <Radio.Button value="2">sometimes</Radio.Button>
@@ -247,7 +247,7 @@ function ADHDTestPage() {
                 </div>
                 <div>
                     <p>6. How often do you feel overly active and compelled to do things, like you were driven by a motor?</p>
-                    <Radio.Group onChange={no6}>
+                    <Radio.Group onChange={no6} buttonStyle="solid">
                         <Radio.Button value="0">never</Radio.Button>
                         <Radio.Button value="1">rarely</Radio.Button>
                         <Radio.Button value="2">sometimes</Radio.Button>
@@ -257,7 +257,7 @@ function ADHDTestPage() {
                 </div>
                 <div>
                     <p>7. How often do you make careless mistakes when you have to work on a boring or difficult project?</p>
-                    <Radio.Group onChange={no7}>
+                    <Radio.Group onChange={no7} buttonStyle="solid">
                         <Radio.Button value="0">never</Radio.Button>
                         <Radio.Button value="1">rarely</Radio.Button>
                         <Radio.Button value="2">sometimes</Radio.Button>
@@ -267,7 +267,7 @@ function ADHDTestPage() {
                 </div>
                 <div>
                     <p>8. How often do you have difficulty keeping your attention when you are doing boring or repetitive work?</p>
-                    <Radio.Group onChange={no8}>
+                    <Radio.Group onChange={no8} buttonStyle="solid">
                         <Radio.Button value="0">never</Radio.Button>
                         <Radio.Button value="1">rarely</Radio.Button>
                         <Radio.Button value="2">sometimes</Radio.Button>
@@ -277,7 +277,7 @@ function ADHDTestPage() {
                 </div>
                 <div>
                     <p>9. How often do you have difficulty concentrating on what people say to you, even when they are speaking to you directly?</p>
-                    <Radio.Group onChange={no9}>
+                    <Radio.Group onChange={no9} buttonStyle="solid">
                         <Radio.Button value="0">never</Radio.Button>
                         <Radio.Button value="1">rarely</Radio.Button>
                         <Radio.Button value="2">sometimes</Radio.Button>
@@ -287,7 +287,7 @@ function ADHDTestPage() {
                 </div>
                 <div>
                     <p>10. How often do you misplace or have difficulty finding things at home or at work?</p>
-                    <Radio.Group onChange={no10}>
+                    <Radio.Group onChange={no10} buttonStyle="solid">
                         <Radio.Button value="0">never</Radio.Button>
                         <Radio.Button value="1">rarely</Radio.Button>
                         <Radio.Button value="2">sometimes</Radio.Button>
@@ -297,7 +297,7 @@ function ADHDTestPage() {
                 </div>
                 <div>
                     <p>11. How often are you distracted by activity or noise around you?</p>
-                    <Radio.Group onChange={no11}>
+                    <Radio.Group onChange={no11} buttonStyle="solid">
                         <Radio.Button value="0">never</Radio.Button>
                         <Radio.Button value="1">rarely</Radio.Button>
                         <Radio.Button value="2">sometimes</Radio.Button>
@@ -307,7 +307,7 @@ function ADHDTestPage() {
                 </div>
                 <div>
                     <p>12. How often do you leave your seat in meetings or other situations in which you are expected to remain seated?</p>
-                    <Radio.Group onChange={no12}>
+                    <Radio.Group onChange={no12} buttonStyle="solid">
                         <Radio.Button value="0">never</Radio.Button>
                         <Radio.Button value="1">rarely</Radio.Button>
                         <Radio.Button value="2">sometimes</Radio.Button>
@@ -317,7 +317,7 @@ function ADHDTestPage() {
                 </div>
                 <div>
                     <p>13. How often do you feel restless or fidgety?</p>
-                    <Radio.Group onChange={no13}>
+                    <Radio.Group onChange={no13} buttonStyle="solid">
                         <Radio.Button value="0">never</Radio.Button>
                         <Radio.Button value="1">rarely</Radio.Button>
                         <Radio.Button value="2">sometimes</Radio.Button>
@@ -327,7 +327,7 @@ function ADHDTestPage() {
                 </div>
                 <div>
                     <p>14. How often do you have difficulty unwinding and relaxing when you have time to yourself?</p>
-                    <Radio.Group onChange={no14}>
+                    <Radio.Group onChange={no14} buttonStyle="solid">
                         <Radio.Button value="0">never</Radio.Button>
                         <Radio.Button value="1">rarely</Radio.Button>
                         <Radio.Button value="2">sometimes</Radio.Button>
@@ -337,7 +337,7 @@ function ADHDTestPage() {
                 </div>
                 <div>
                     <p>15. How often do you find yourself talking too much when you are in social situations?</p>
-                    <Radio.Group onChange={no15}>
+                    <Radio.Group onChange={no15} buttonStyle="solid">
                         <Radio.Button value="0">never</Radio.Button>
                         <Radio.Button value="1">rarely</Radio.Button>
                         <Radio.Button value="2">sometimes</Radio.Button>
@@ -347,7 +347,7 @@ function ADHDTestPage() {
                 </div>
                 <div>
                     <p>16. When you’re in a conversation, how often do you find yourself finishing the sentences of the people you are talking to, before they can finish them themselves?</p>
-                    <Radio.Group onChange={no16}>
+                    <Radio.Group onChange={no16} buttonStyle="solid">
                         <Radio.Button value="0">never</Radio.Button>
                         <Radio.Button value="1">rarely</Radio.Button>
                         <Radio.Button value="2">sometimes</Radio.Button>
@@ -357,7 +357,7 @@ function ADHDTestPage() {
                 </div>
                 <div>
                     <p>17. How often do you have difficulty waiting your turn in situations when turn taking is required?</p>
-                    <Radio.Group onChange={no17}>
+                    <Radio.Group onChange={no17} buttonStyle="solid">
                         <Radio.Button value="0">never</Radio.Button>
                         <Radio.Button value="1">rarely</Radio.Button>
                         <Radio.Button value="2">sometimes</Radio.Button>
@@ -367,7 +367,7 @@ function ADHDTestPage() {
                 </div>
                 <div>
                     <p>18. How often do you interrupt others when they are busy?</p>
-                    <Radio.Group onChange={no18}>
+                    <Radio.Group onChange={no18} buttonStyle="solid">
                         <Radio.Button value="0">never</Radio.Button>
                         <Radio.Button value="1">rarely</Radio.Button>
                         <Radio.Button value="2">sometimes</Radio.Button>
@@ -376,11 +376,12 @@ function ADHDTestPage() {
                     </Radio.Group>
                 </div>
                 <div style={{ marginTop: '30px' }}>
-                    <button onClick={handleSubmit}>Submit</button>
+                    <button onClick={handleSubmit} style={{ width: '100px', height: '30px', border: 'none', backgroundColor: '#0E4A84', borderRadius: '20px', color: '#FFF'}}>Submit</button>
                 </div>
                 <div style={{ marginTop: '30px' }}>
                     {isCollapsed && (
                         <Collapse
+                            style={{ marginBottom: '100px'}}
                             items={[
                                 {
                                     label: 'Result',

@@ -31,7 +31,7 @@ function EatingDisorderTestPage() {
     const no6 = (value) => {
         if (value >= 1) {
             setIsYesSelected(true);
-        } else if (value == 0) {
+        } else if (value === 0) {
             setIsYesSelected(false);
         } 
         console.log('Is', value)
@@ -98,7 +98,7 @@ function EatingDisorderTestPage() {
     return (
         <div>
             <div>
-                <a href='./'>
+                <a href='./' style={{ textDecoration: 'none', color: '#0E4A84' }}>
                   <p style={{
                           fontSize: '30px',
                           textAlign: 'center'
@@ -113,7 +113,7 @@ function EatingDisorderTestPage() {
                 <br />
                 <div>
                     <p>How much more or less do you feel you worry about your weight and body shape than other people your age?</p>
-                    <Radio.Group onChange={no1}>
+                    <Radio.Group onChange={no1} buttonStyle="solid">
                         <Radio.Button value="0">I worry a lot less than other people</Radio.Button>
                         <Radio.Button value="25">I worry a little less than other people</Radio.Button>
                         <Radio.Button value="50">I worry about the same as other people</Radio.Button>
@@ -123,7 +123,7 @@ function EatingDisorderTestPage() {
                 </div>
                 <div>
                     <p>How afraid are you of gaining 3 pounds?</p>
-                    <Radio.Group onChange={no2}>
+                    <Radio.Group onChange={no2} buttonStyle="solid">
                         <Radio.Button value="0">Not afraid of gaining</Radio.Button>
                         <Radio.Button value="25">Slightly afraid of gaining</Radio.Button>
                         <Radio.Button value="50">Moderately afraid of gaining</Radio.Button>
@@ -133,7 +133,7 @@ function EatingDisorderTestPage() {
                 </div>
                 <div>
                     <p>When was the last time you went on a diet?</p>
-                    <Radio.Group onChange={no3}>
+                    <Radio.Group onChange={no3} buttonStyle="solid">
                         <Radio.Button value="0">I have never been on a diet</Radio.Button>
                         <Radio.Button value="16">I was on a diet about one year ago</Radio.Button>
                         <Radio.Button value="33">I was on a diet about 6 months ago</Radio.Button>
@@ -145,7 +145,7 @@ function EatingDisorderTestPage() {
                 </div>
                 <div>
                     <p>Compared to other things in your life, how important is your weight to you?</p>
-                    <Radio.Group onChange={no4}>
+                    <Radio.Group onChange={no4} buttonStyle="solid">
                         <Radio.Button value="0">My weight is not important compared to other things in my life</Radio.Button>
                         <Radio.Button value="33">My weight is a little more important than some other things in my life</Radio.Button>
                         <Radio.Button value="75">My weight is more important than most, but not all, things in my life</Radio.Button>
@@ -154,7 +154,7 @@ function EatingDisorderTestPage() {
                 </div>
                 <div>
                     <p>Do you ever feel fat?</p>
-                    <Radio.Group onChange={no5}>
+                    <Radio.Group onChange={no5} buttonStyle="solid">
                         <Radio.Button value="0">never</Radio.Button>
                         <Radio.Button value="25">rarely</Radio.Button>
                         <Radio.Button value="50">sometimes</Radio.Button>
@@ -169,42 +169,42 @@ function EatingDisorderTestPage() {
                 {isYesSelected && ( <div>
                     <p>During these episodes of eating an unusually large amount of food with a sense of loss of control, do you:</p>
                     <p>Eat much more rapidly than normal?</p>
-                      <Radio.Group onChange={no7}>
+                      <Radio.Group onChange={no7} buttonStyle="solid">
                           <Radio.Button value="0">No</Radio.Button>
                           <Radio.Button value="1">Yes</Radio.Button>
                       </Radio.Group>
                   </div>)}
                 {isYesSelected && ( <div>
                     <p>Eat until feeling uncomfortably full?</p>
-                      <Radio.Group onChange={no8}>
+                      <Radio.Group onChange={no8} buttonStyle="solid">
                           <Radio.Button value="0">No</Radio.Button>
                           <Radio.Button value="1">Yes</Radio.Button>
                       </Radio.Group>
                   </div>)}
                 {isYesSelected && ( <div>
                     <p>Eat large amounts of food when not feeling physically hungry?</p>
-                      <Radio.Group onChange={no9}>
+                      <Radio.Group onChange={no9} buttonStyle="solid">
                           <Radio.Button value="0">No</Radio.Button>
                           <Radio.Button value="1">Yes</Radio.Button>
                       </Radio.Group>
                   </div>)}
                 {isYesSelected && ( <div>
                     <p>Eat alone because of feeling embarrassed by how much you are eating?</p>
-                      <Radio.Group onChange={no10}>
+                    <Radio.Group onChange={no10} buttonStyle="solid">
                           <Radio.Button value="0">No</Radio.Button>
                           <Radio.Button value="1">Yes</Radio.Button>
                       </Radio.Group>
                   </div>)}
                 {isYesSelected && ( <div>
                     <p>Feel disgusted, depressed, or very guilty afterward?</p>
-                      <Radio.Group onChange={no11}>
+                      <Radio.Group onChange={no11} buttonStyle="solid">
                           <Radio.Button value="0">No</Radio.Button>
                           <Radio.Button value="1">Yes</Radio.Button>
                       </Radio.Group>
                   </div>)}
                 {isYesSelected && ( <div>
                     <p>How distressed or upset have you felt about these episodes?</p>
-                      <Radio.Group onChange={no12}>
+                      <Radio.Group onChange={no12} buttonStyle="solid">
                           <Radio.Button value="0">Not at all</Radio.Button>
                           <Radio.Button value="1">A little</Radio.Button>
                           <Radio.Button value="2">Moderately</Radio.Button>
@@ -231,53 +231,54 @@ function EatingDisorderTestPage() {
                 </div>
                 <div>
                     <p>Do you consume a small amount of food (i.e., less than 1200 calories/day) on a regular basis to influence your shape or weight?</p>
-                    <Radio.Group onChange={no17}>
+                    <Radio.Group onChange={no17} buttonStyle="solid">
                           <Radio.Button value="0">No</Radio.Button>
                           <Radio.Button value="1">Yes</Radio.Button>
                     </Radio.Group>
                 </div>
                 <div>
                     <p>Do you struggle with a lack of interest in eating or food?</p>
-                    <Radio.Group onChange={no18}>
+                    <Radio.Group onChange={no18} buttonStyle="solid">
                           <Radio.Button value="0">No</Radio.Button>
                           <Radio.Button value="1">Yes</Radio.Button>
                     </Radio.Group>
                 </div>
                 <div>
                     <p>Do you avoid certain or many foods because of such features as texture, consistency, temperature, or smell, or have other people suggested this may be the case for you?</p>
-                    <Radio.Group onChange={no19}>
+                    <Radio.Group onChange={no19} buttonStyle="solid">
                           <Radio.Button value="0">No</Radio.Button>
                           <Radio.Button value="1">Yes</Radio.Button>
                     </Radio.Group>
                 </div>
                 <div>
                     <p>Do you avoid certain or many foods because of fear of experiencing negative consequences like choking or vomiting, or have other people suggested this may be the case for you?</p>
-                    <Radio.Group onChange={no20}>
+                    <Radio.Group onChange={no20} buttonStyle="solid">
                           <Radio.Button value="0">No</Radio.Button>
                           <Radio.Button value="1">Yes</Radio.Button>
                     </Radio.Group>
                 </div>
                 <div>
                     <p>Have you experienced significant weight loss (or are at a low weight for your age and height) but are not overly concerned with the size or shape of your body?</p>
-                    <Radio.Group onChange={no21}>
+                    <Radio.Group onChange={no21} buttonStyle="solid">
                           <Radio.Button value="0">No</Radio.Button>
                           <Radio.Button value="1">Yes</Radio.Button>
                     </Radio.Group>
                 </div>
                 <div>
                     <p>Are you currently in treatment for an eating disorder?</p>
-                    <Radio.Group onChange={no22}>
+                    <Radio.Group onChange={no22} buttonStyle="solid">
                           <Radio.Button value="0">No</Radio.Button>
                           <Radio.Button value="1">Yes</Radio.Button>
                           <Radio.Button value="2">Not currently, but I have been in the past</Radio.Button>
                     </Radio.Group>
                 </div>
                 <div style={{ marginTop: '30px' }}>
-                    <button onClick={handleSubmit}>Submit</button>
+                    <button onClick={handleSubmit} style={{ width: '100px', height: '30px', border: 'none', backgroundColor: '#0E4A84', borderRadius: '20px', color: '#FFF'}}>Submit</button>
                 </div>
                 <div style={{ marginTop: '30px' }}>
                     {isCollapsed && (
                         <Collapse
+                            style={{ marginBottom: '100px'}}
                             items={[
                                 {
                                     label: 'Result',

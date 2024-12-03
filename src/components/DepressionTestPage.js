@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import { Radio, Collapse } from 'antd'
 
+import './ANTDstyle.css'
+
 function DepressionTestPage() {
 
     const [Result, setResult] = useState()
@@ -63,11 +65,11 @@ function DepressionTestPage() {
     return (
         <div>
             <div>
-                <a href='./'>
-                  <p style={{
-                          fontSize: '30px',
-                          textAlign: 'center'
-                  }}>Mental Healthcare Tester</p>
+                <a href='./' style={{ textDecoration: 'none', color: '#0E4A84' }}>
+                    <p style={{
+                        fontSize: '30px',
+                        textAlign: 'center'  
+                    }}>Mental Healthcare Tester</p>
                 </a>
                 <br />
                 <p style={{
@@ -79,7 +81,7 @@ function DepressionTestPage() {
                 <br />
                 <div>
                     <p>1. Little interest or pleasure in doing things</p>
-                    <Radio.Group onChange={no1}>
+                    <Radio.Group buttonStyle="solid" onChange={no1}>
                         <Radio.Button value="0">not at all</Radio.Button>
                         <Radio.Button value="1">several days</Radio.Button>
                         <Radio.Button value="2">more than half the days</Radio.Button>
@@ -88,7 +90,7 @@ function DepressionTestPage() {
                 </div>
                 <div>
                     <p>2. Feeling down, depressed, or hopeless</p>
-                    <Radio.Group onChange={no2}>
+                    <Radio.Group onChange={no2} buttonStyle="solid">
                         <Radio.Button value="0">not at all</Radio.Button>
                         <Radio.Button value="1">several days</Radio.Button>
                         <Radio.Button value="2">more than half the days</Radio.Button>
@@ -97,7 +99,7 @@ function DepressionTestPage() {
                 </div>
                 <div>
                     <p>3. Trouble falling or staying asleep, or sleeping too much</p>
-                    <Radio.Group onChange={no3}>
+                    <Radio.Group onChange={no3} buttonStyle="solid">
                         <Radio.Button value="0">not at all</Radio.Button>
                         <Radio.Button value="1">several days</Radio.Button>
                         <Radio.Button value="2">more than half the days</Radio.Button>
@@ -106,7 +108,7 @@ function DepressionTestPage() {
                 </div>
                 <div>
                     <p>4. Feeling tired or having little energy</p>
-                    <Radio.Group onChange={no4}>
+                    <Radio.Group onChange={no4} buttonStyle="solid">
                         <Radio.Button value="0">not at all</Radio.Button>
                         <Radio.Button value="1">several days</Radio.Button>
                         <Radio.Button value="2">more than half the days</Radio.Button>
@@ -115,7 +117,7 @@ function DepressionTestPage() {
                 </div>
                 <div>
                     <p>5. Poor appetite or overeating</p>
-                    <Radio.Group onChange={no5}>
+                    <Radio.Group onChange={no5} buttonStyle="solid">
                         <Radio.Button value="0">not at all</Radio.Button>
                         <Radio.Button value="1">several days</Radio.Button>
                         <Radio.Button value="2">more than half the days</Radio.Button>
@@ -124,7 +126,7 @@ function DepressionTestPage() {
                 </div>
                 <div>
                     <p>6. Feeling bad about yourself - or that you are a failure or have let yourself or your family down</p>
-                    <Radio.Group onChange={no6}>
+                    <Radio.Group onChange={no6} buttonStyle="solid">
                         <Radio.Button value="0">not at all</Radio.Button>
                         <Radio.Button value="1">several days</Radio.Button>
                         <Radio.Button value="2">more than half the days</Radio.Button>
@@ -133,7 +135,7 @@ function DepressionTestPage() {
                 </div>
                 <div>
                     <p>7. Trouble concentrating on things, such as reading the newspaper or watching television</p>
-                    <Radio.Group onChange={no7}>
+                    <Radio.Group onChange={no7} buttonStyle="solid">
                         <Radio.Button value="0">not at all</Radio.Button>
                         <Radio.Button value="1">several days</Radio.Button>
                         <Radio.Button value="2">more than half the days</Radio.Button>
@@ -143,7 +145,7 @@ function DepressionTestPage() {
                 <div>
                     <p>8. Moving or speaking so slowly that other people could have noticed</p>
                     <p>Or the opposite - being so fidgety or restless that you have been moving around a lot more than usual</p>
-                    <Radio.Group onChange={no8}>
+                    <Radio.Group onChange={no8} buttonStyle="solid">
                         <Radio.Button value="0">not at all</Radio.Button>
                         <Radio.Button value="1">several days</Radio.Button>
                         <Radio.Button value="2">more than half the days</Radio.Button>
@@ -152,7 +154,7 @@ function DepressionTestPage() {
                 </div>
                 <div>
                     <p>9. Thoughts that you would be better off dead, or of hurting yourself</p>
-                    <Radio.Group onChange={no9}>
+                    <Radio.Group onChange={no9} buttonStyle="solid">
                         <Radio.Button value="0">not at all</Radio.Button>
                         <Radio.Button value="1">several days</Radio.Button>
                         <Radio.Button value="2">more than half the days</Radio.Button>
@@ -161,7 +163,7 @@ function DepressionTestPage() {
                 </div>
                 <div>
                     <p>10. If you checked off any problems, how difficult have these problems made it for you at work, home, or with other people?</p>
-                    <Radio.Group onChange={no10}>
+                    <Radio.Group onChange={no10} buttonStyle="solid">
                         <Radio.Button value="0">not difficult at all</Radio.Button>
                         <Radio.Button value="1">somewhere difficult</Radio.Button>
                         <Radio.Button value="2">very difficult</Radio.Button>
@@ -169,11 +171,12 @@ function DepressionTestPage() {
                     </Radio.Group>
                 </div>
                 <div style={{ marginTop: '30px' }}>
-                    <button onClick={handleSubmit}>Submit</button>
+                    <button onClick={handleSubmit} style={{ width: '100px', height: '30px', border: 'none', backgroundColor: '#0E4A84', borderRadius: '20px', color: '#FFF'}}>Submit</button>
                 </div>
                 <div style={{ marginTop: '30px' }}>
                     {isCollapsed && (
                         <Collapse
+                            style={{ marginBottom: '100px'}}
                             items={[
                                 {
                                     label: 'Result',

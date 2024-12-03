@@ -65,7 +65,7 @@ function PostpartumDepressionTestPage() {
     return (
         <div>
             <div>
-                <a href='./'>
+                <a href='./' style={{ textDecoration: 'none', color: '#0E4A84' }}>
                   <p style={{
                           fontSize: '30px',
                           textAlign: 'center'
@@ -83,7 +83,7 @@ function PostpartumDepressionTestPage() {
                 <br />
                 <div>
                     <p>1. I have been able to laugh and see the funny side of things</p>
-                    <Radio.Group onChange={no1}>
+                    <Radio.Group onChange={no1} buttonStyle="solid">
                         <Radio.Button value="0">as much as i always could</Radio.Button>
                         <Radio.Button value="1">not quite so much now</Radio.Button>
                         <Radio.Button value="2">definitely not so much now</Radio.Button>
@@ -92,7 +92,7 @@ function PostpartumDepressionTestPage() {
                 </div>
                 <div>
                     <p>2. I have looked forward with enjoyment to things</p>
-                    <Radio.Group onChange={no2}>
+                    <Radio.Group onChange={no2} buttonStyle="solid">
                         <Radio.Button value="0">as much as i ever did</Radio.Button>
                         <Radio.Button value="1">rather less than i used to</Radio.Button>
                         <Radio.Button value="2">definitely less than i used to</Radio.Button>
@@ -101,7 +101,7 @@ function PostpartumDepressionTestPage() {
                 </div>
                 <div>
                     <p>3. I have blamed myself unnecessarily when things went wrong</p>
-                    <Radio.Group onChange={no3}>
+                    <Radio.Group onChange={no3} buttonStyle="solid">
                         <Radio.Button value="0">no, never</Radio.Button>
                         <Radio.Button value="1">not very often</Radio.Button>
                         <Radio.Button value="2">yes, some of the time</Radio.Button>
@@ -110,7 +110,7 @@ function PostpartumDepressionTestPage() {
                 </div>
                 <div>
                     <p>4. I have been anxious or worried for no good reason</p>
-                    <Radio.Group onChange={no4}>
+                    <Radio.Group onChange={no4} buttonStyle="solid">
                         <Radio.Button value="0">no, not at all</Radio.Button>
                         <Radio.Button value="1">hardly ever</Radio.Button>
                         <Radio.Button value="2">yes, sometimes</Radio.Button>
@@ -119,7 +119,7 @@ function PostpartumDepressionTestPage() {
                 </div>
                 <div>
                     <p>5. I have felt scared or panicky for no very good reason</p>
-                    <Radio.Group onChange={no5}>
+                    <Radio.Group onChange={no5} buttonStyle="solid">
                         <Radio.Button value="0">no, not at all</Radio.Button>
                         <Radio.Button value="1">no, not much</Radio.Button>
                         <Radio.Button value="2">yes, sometimes</Radio.Button>
@@ -128,7 +128,7 @@ function PostpartumDepressionTestPage() {
                 </div>
                 <div>
                     <p>6. Things have been getting on top of me</p>
-                    <Radio.Group onChange={no6}>
+                    <Radio.Group onChange={no6} buttonStyle="solid">
                         <Radio.Button value="0">No, I have been coping as well as ever</Radio.Button>
                         <Radio.Button value="1">No, most of the time I have coped quite well</Radio.Button>
                         <Radio.Button value="2">yes, sometimes i haven't been coping as well as usual</Radio.Button>
@@ -137,7 +137,7 @@ function PostpartumDepressionTestPage() {
                 </div>
                 <div>
                     <p>7. I have been so unhappy that I have had difficulty sleeping</p>
-                    <Radio.Group onChange={no7}>
+                    <Radio.Group onChange={no7} buttonStyle="solid">
                         <Radio.Button value="0">No, not at all</Radio.Button>
                         <Radio.Button value="1">Not very often</Radio.Button>
                         <Radio.Button value="2">Yes, sometimes</Radio.Button>
@@ -146,7 +146,7 @@ function PostpartumDepressionTestPage() {
                 </div>
                 <div>
                     <p>8. I have felt sad or miserable</p>
-                    <Radio.Group onChange={no8}>
+                    <Radio.Group onChange={no8} buttonStyle="solid">
                         <Radio.Button value="0">No, not at all</Radio.Button>
                         <Radio.Button value="1">Not very often</Radio.Button>
                         <Radio.Button value="2">Yes, quite often</Radio.Button>
@@ -155,7 +155,7 @@ function PostpartumDepressionTestPage() {
                 </div>
                 <div>
                     <p>9. I have been so unhappy that I have been crying</p>
-                    <Radio.Group onChange={no9}>
+                    <Radio.Group onChange={no9} buttonStyle="solid">
                         <Radio.Button value="0">No, never</Radio.Button>
                         <Radio.Button value="1">Only occasionally</Radio.Button>
                         <Radio.Button value="2">Yes, quite often</Radio.Button>
@@ -164,7 +164,7 @@ function PostpartumDepressionTestPage() {
                 </div>
                 <div>
                     <p>10. The thought of harming myself has occurred to me</p>
-                    <Radio.Group onChange={no10}>
+                    <Radio.Group onChange={no10} buttonStyle="solid">
                         <Radio.Button value="0">Never</Radio.Button>
                         <Radio.Button value="1">Hardly ever</Radio.Button>
                         <Radio.Button value="2">Sometimes</Radio.Button>
@@ -172,11 +172,12 @@ function PostpartumDepressionTestPage() {
                     </Radio.Group>
                 </div>
                 <div style={{ marginTop: '30px' }}>
-                    <button onClick={handleSubmit}>Submit</button>
+                    <button onClick={handleSubmit} style={{ width: '100px', height: '30px', border: 'none', backgroundColor: '#0E4A84', borderRadius: '20px', color: '#FFF'}}>Submit</button>
                 </div>
                 <div style={{ marginTop: '30px' }}>
                     {isCollapsed && (
                         <Collapse
+                            style={{ marginBottom: '100px'}}
                             items={[
                                 {
                                     label: 'Result',

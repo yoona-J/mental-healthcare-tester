@@ -50,7 +50,7 @@ function AnxietyTestPage() {
     return (
         <div>
             <div>
-                <a href='./'>
+                <a href='./' style={{ textDecoration: 'none', color: '#0E4A84' }}>
                   <p style={{
                           fontSize: '30px',
                           textAlign: 'center'
@@ -66,7 +66,7 @@ function AnxietyTestPage() {
                 <br />
                 <div>
                     <p>1. Feeling nervous, anxious, or on edge</p>
-                    <Radio.Group onChange={no1}>
+                    <Radio.Group onChange={no1} buttonStyle="solid">
                         <Radio.Button value="0">not at all</Radio.Button>
                         <Radio.Button value="1">several days</Radio.Button>
                         <Radio.Button value="2">more than half the days</Radio.Button>
@@ -75,7 +75,7 @@ function AnxietyTestPage() {
                 </div>
                 <div>
                     <p>2. Not being able to stop or control worrying</p>
-                    <Radio.Group onChange={no2}>
+                    <Radio.Group onChange={no2} buttonStyle="solid">
                         <Radio.Button value="0">not at all</Radio.Button>
                         <Radio.Button value="1">several days</Radio.Button>
                         <Radio.Button value="2">more than half the days</Radio.Button>
@@ -84,7 +84,7 @@ function AnxietyTestPage() {
                 </div>
                 <div>
                     <p>3. Worrying too much about different things</p>
-                    <Radio.Group onChange={no3}>
+                    <Radio.Group onChange={no3} buttonStyle="solid">
                         <Radio.Button value="0">not at all</Radio.Button>
                         <Radio.Button value="1">several days</Radio.Button>
                         <Radio.Button value="2">more than half the days</Radio.Button>
@@ -93,7 +93,7 @@ function AnxietyTestPage() {
                 </div>
                 <div>
                     <p>4. Trouble relaxing</p>
-                    <Radio.Group onChange={no4}>
+                    <Radio.Group onChange={no4} buttonStyle="solid">
                         <Radio.Button value="0">not at all</Radio.Button>
                         <Radio.Button value="1">several days</Radio.Button>
                         <Radio.Button value="2">more than half the days</Radio.Button>
@@ -102,7 +102,7 @@ function AnxietyTestPage() {
                 </div>
                 <div>
                     <p>5. Being so restless that it is hard to sit still</p>
-                    <Radio.Group onChange={no5}>
+                    <Radio.Group onChange={no5} buttonStyle="solid">
                         <Radio.Button value="0">not at all</Radio.Button>
                         <Radio.Button value="1">several days</Radio.Button>
                         <Radio.Button value="2">more than half the days</Radio.Button>
@@ -111,7 +111,7 @@ function AnxietyTestPage() {
                 </div>
                 <div>
                     <p>6. Becoming easily annoyed or irritable</p>
-                    <Radio.Group onChange={no6}>
+                    <Radio.Group onChange={no6} buttonStyle="solid">
                         <Radio.Button value="0">not at all</Radio.Button>
                         <Radio.Button value="1">several days</Radio.Button>
                         <Radio.Button value="2">more than half the days</Radio.Button>
@@ -120,7 +120,7 @@ function AnxietyTestPage() {
                 </div>
                 <div>
                     <p>7. Feeling afraid, as if something awful might happen</p>
-                    <Radio.Group onChange={no7}>
+                    <Radio.Group onChange={no7} buttonStyle="solid">
                         <Radio.Button value="0">not at all</Radio.Button>
                         <Radio.Button value="1">several days</Radio.Button>
                         <Radio.Button value="2">more than half the days</Radio.Button>
@@ -128,11 +128,12 @@ function AnxietyTestPage() {
                     </Radio.Group>
                 </div>
                 <div style={{ marginTop: '30px' }}>
-                    <button onClick={handleSubmit}>Submit</button>
+                    <button onClick={handleSubmit} style={{ width: '100px', height: '30px', border: 'none', backgroundColor: '#0E4A84', borderRadius: '20px', color: '#FFF'}}>Submit</button>
                 </div>
                 <div style={{ marginTop: '30px' }}>
                     {isCollapsed && (
                         <Collapse
+                            style={{ marginBottom: '100px'}}
                             items={[
                                 {
                                     label: 'Result',

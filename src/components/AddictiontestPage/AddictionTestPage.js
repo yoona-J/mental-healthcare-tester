@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
-import { Radio, Collapse, Checkbox } from 'antd'
+import { Radio, Checkbox } from 'antd'
 
 function AddictionTestPage() {
 
-    const [Result, setResult] = useState()
+    // const [Result, setResult] = useState()
     const [No1, setNo1] = useState('')
     const [No2, setNo2] = useState()
 
@@ -16,19 +16,19 @@ function AddictionTestPage() {
         console.log('IsSelect', value)
     }
     const NextButton = () => {
-      if (No1 == 'alcohol') {
+      if (No1 === 'alcohol') {
         return <div>
           <a href='./addition/alcohol'>
             <button>Next</button>
           </a>
         </div>
-      } else if (No1 == 'drug') {
+      } else if (No1 === 'drug') {
         return <div>
           <a href='./addition/drug'>
             <button>Next</button>
           </a>
         </div>
-      } else if (No1 == 'another') {
+      } else if (No1 === 'another') {
         return <div>
           <a href='./addition/another'>
             <button>Next</button>
@@ -45,7 +45,7 @@ function AddictionTestPage() {
     return (
         <div>
             <div>
-                <a href='./'>
+                <a href='./' style={{ textDecoration: 'none', color: '#0E4A84' }}>
                   <p style={{
                           fontSize: '30px',
                           textAlign: 'center'
@@ -62,7 +62,7 @@ function AddictionTestPage() {
                 <br />
                 <div>
                     <p>What substance or behavior are you most concerned about?</p>
-                    <Radio.Group onChange={no1}>
+                    <Radio.Group onChange={no1} buttonStyle="solid" >
                         <Radio.Button value="alcohol">Alcohol</Radio.Button>
                         <Radio.Button value="drug">Another drug or multiple drugs</Radio.Button>
                         <Radio.Button value="another">Another behavior (gambling, self-harm, etc.)</Radio.Button>

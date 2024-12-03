@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes, BrowserRouter } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import LandingPage from "./components/LandingPage";
 import DepressionTestPage from "./components/DepressionTestPage";
@@ -17,7 +17,7 @@ import AnotherTestPage from "./components/AddictiontestPage/AnotherTestPage";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <Router basename={process.env.PUBLIC_URL}>
          <Routes>
             <Route exact path="/" element={ <LandingPage />} />
             <Route exact path="/depression" element={ <DepressionTestPage />} />
@@ -33,7 +33,7 @@ function App() {
             <Route exact path="/addition/drug" element={ <DrugTestPage />} />
             <Route exact path="/addition/another" element={ <AnotherTestPage />} />
          </Routes>
-     </BrowserRouter>
+     </Router>
     </div>
   );
 }
