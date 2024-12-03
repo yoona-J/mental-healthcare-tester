@@ -19,24 +19,24 @@ function AddictionTestPage() {
       if (No1 === 'alcohol') {
         return <div>
           <a href='./addition/alcohol'>
-            <button>Next</button>
+            <button style={{ width: '100px', height: '30px', border: 'none', backgroundColor: '#0E4A84', borderRadius: '20px', color: '#FFF'}}>Next</button>
           </a>
         </div>
       } else if (No1 === 'drug') {
         return <div>
           <a href='./addition/drug'>
-            <button>Next</button>
+            <button style={{ width: '100px', height: '30px', border: 'none', backgroundColor: '#0E4A84', borderRadius: '20px', color: '#FFF'}}>Next</button>
           </a>
         </div>
       } else if (No1 === 'another') {
         return <div>
           <a href='./addition/another'>
-            <button>Next</button>
+            <button style={{ width: '100px', height: '30px', border: 'none', backgroundColor: '#0E4A84', borderRadius: '20px', color: '#FFF'}}>Next</button>
           </a>
         </div>
       } else {
         return <div>
-            <button>Next</button>
+            <button style={{ width: '100px', height: '30px', border: 'none', backgroundColor: '#0E4A84', borderRadius: '20px', color: '#FFF'}}>Next</button>
         </div>
       }
     }  
@@ -45,7 +45,7 @@ function AddictionTestPage() {
     return (
         <div>
             <div>
-                <a href='./' style={{ textDecoration: 'none', color: '#0E4A84' }}>
+                <a href='/' style={{ textDecoration: 'none', color: '#0E4A84' }}>
                   <p style={{
                           fontSize: '30px',
                           textAlign: 'center'
